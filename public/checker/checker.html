@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>チェッカーシャドウ錯視</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <nav>
+            <a href="../index.html" class="home-link">Illusion</a>
+        </nav>
+    </header>
+    <div class="content">
+        <div class="header">
+            <h1>チェッカーシャドウ錯視</h1>
+            <p>このデモでは、チェッカーボード上の影が色の錯覚を引き起こします。スライダーを動かすと影の強さが変化します。</p>
+        </div>
+        <div class="demo-container">
+            <div class="illusion-container">
+                <div class="checkerboard" id="checkerboard">
+                    <!-- チェッカーボードを構成するタイル -->
+                    <!-- 8x8のチェッカーボード -->
+                    <div class="tile dark"></div>
+                    <div class="tile light"></div>
+                    <div class="tile dark"></div>
+                    <div class="tile light"></div>
+                    <div class="tile dark"></div>
+                    <div class="tile light"></div>
+                    <div class="tile dark"></div>
+                    <div class="tile light"></div>
+
+                    <div class="tile light"></div>
+                    <div class="tile dark"></div>
+                    <div class="tile light"></div>
+                    <div class="tile dark"></div>
+                    <div class="tile light"></div>
+                    <div class="tile dark"></div>
+                    <div class="tile light"></div>
+                    <div class="tile dark"></div>
+
+                    <div class="tile dark"></div>
+                    <div class="tile light"></div>
+                    <div class="tile dark"></div>
+                    <div class="tile light"></div>
+                    <div class="tile dark"></div>
+                    <div class="tile light"></div>
+                    <div class="tile dark"></div>
+                    <div class="tile light"></div>
+
+                    <div class="tile light"></div>
+                    <div class="tile dark"></div>
+                    <div class="tile light"></div>
+                    <div class="tile dark"></div>
+                    <div class="tile light"></div>
+                    <div class="tile dark"></div>
+                    <div class="tile light"></div>
+                    <div class="tile dark"></div>
+
+                    <div class="tile dark"></div>
+                    <div class="tile light"></div>
+                    <div class="tile dark"></div>
+                    <div class="tile light"></div>
+                    <div class="tile dark"></div>
+                    <div class="tile light"></div>
+                    <div class="tile dark"></div>
+                    <div class="tile light"></div>
+
+                    <div class="tile light"></div>
+                    <div class="tile dark"></div>
+                    <div class="tile light"></div>
+                    <div class="tile dark"></div>
+                    <div class="tile light"></div>
+                    <div class="tile dark"></div>
+                    <div class="tile light"></div>
+                    <div class="tile dark"></div>
+
+                    <div class="tile dark"></div>
+                    <div class="tile light"></div>
+                    <div class="tile dark"></div>
+                    <div class="tile light"></div>
+                    <div class="tile dark"></div>
+                    <div class="tile light"></div>
+                    <div class="tile dark"></div>
+                    <div class="tile light"></div>
+
+                    <div class="tile light"></div>
+                    <div class="tile dark"></div>
+                    <div class="tile light"></div>
+                    <div class="tile dark"></div>
+                    <div class="tile light"></div>
+                    <div class="tile dark"></div>
+                    <div class="tile light"></div>
+                    <div class="tile dark"></div>
+                </div>
+                <div class="shadow-container" id="shadowContainer">
+                    <!-- 5x5の影の配置 -->
+                    <div class="shadow-tile dark-shadow"></div>
+                    <div class="shadow-tile light-shadow"></div>
+                    <div class="shadow-tile dark-shadow"></div>
+                    <div class="shadow-tile light-shadow"></div>
+                    <div class="shadow-tile dark-shadow"></div>
+
+                    <div class="shadow-tile light-shadow"></div>
+                    <div class="shadow-tile dark-shadow"></div>
+                    <div class="shadow-tile light-shadow"></div>
+                    <div class="shadow-tile dark-shadow"></div>
+                    <div class="shadow-tile light-shadow"></div>
+
+                    <div class="shadow-tile dark-shadow"></div>
+                    <div class="shadow-tile light-shadow"></div>
+                    <div class="shadow-tile dark-shadow"></div>
+                    <div class="shadow-tile light-shadow"></div>
+                    <div class="shadow-tile dark-shadow"></div>
+
+                    <div class="shadow-tile light-shadow"></div>
+                    <div class="shadow-tile dark-shadow"></div>
+                    <div class="shadow-tile light-shadow"></div>
+                    <div class="shadow-tile dark-shadow"></div>
+                    <div class="shadow-tile light-shadow"></div>
+
+                    <div class="shadow-tile dark-shadow"></div>
+                    <div class="shadow-tile light-shadow"></div>
+                    <div class="shadow-tile dark-shadow"></div>
+                    <div class="shadow-tile light-shadow"></div>
+                    <div class="shadow-tile dark-shadow"></div>
+                </div>
+            </div>
+            <div class="slider-container">
+                <input type="range" min="0" max="100" value="0" id="shadowSlider">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

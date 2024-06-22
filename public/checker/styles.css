@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.main-header {
+    width: 100%;
+    background-color: #3498db;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.main-header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 800px;
+    border-radius: 8px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2em;
+    color: #333;
+}
+
+.header p {
+    margin: 10px 0 0;
+    font-size: 1.2em;
+    color: #666;
+    line-height: 1.6;
+}
+
+.demo-container {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    margin-top: 20px;
+}
+
+.illusion-container {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(8, 50px);
+    grid-template-rows: repeat(8, 50px);
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+
+.tile {
+    width: 50px;
+    height: 50px;
+}
+
+.tile.dark {
+    background-color: #333;
+}
+
+.tile.light {
+    background-color: #ccc;
+}
+
+.shadow-container {
+    position: absolute;
+    top: 100px; /* チェッカーボードの中央に調整 */
+    left: 100px; /* チェッカーボードの中央に調整 */
+    display: grid;
+    grid-template-columns: repeat(5, 50px);
+    grid-template-rows: repeat(5, 50px);
+}
+
+.shadow-tile {
+    width: 50px;
+    height: 50px;
+    pointer-events: none;
+}
+
+.dark-shadow {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.light-shadow {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.slider-container {
+    width: 80%;
+    max-width: 800px;
+    margin-top: 20px;
+}
+
+#shadowSlider {
+    width: 100%;
+}

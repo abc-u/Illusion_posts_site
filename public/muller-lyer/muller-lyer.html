@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ミュラー・リヤー錯視</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <nav>
+            <a href="../index.html" class="home-link">Illusion</a>
+        </nav>
+    </header>
+    <div class="content">
+        <div class="header">
+            <h1>ミュラー・リヤー錯視</h1>
+            <p>このページでは、ミュラー・リヤー錯視のデモンストレーションを表示します。スライダーを動かして上の棒の位置を調整し、錯視の効果を体験してください。</p>
+        </div>
+        <div class="demo-container">
+            <div class="container" id="illusion-container">
+                <canvas id="muller-lyer-canvas" width="800" height="200"></canvas>
+            </div>
+            <div class="slider-container">
+                <input type="range" min="0" max="100" value="0" id="effectSlider">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

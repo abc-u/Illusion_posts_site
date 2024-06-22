@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>エビングハウス錯視</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <nav>
+            <a href="../index.html" class="home-link">Illusion</a>
+        </nav>
+    </header>
+    <div class="header">
+        <h1>エビングハウス錯視</h1>
+        <p>エビングハウス錯視は、同じ大きさの円が異なる大きさに見える視覚的な錯覚です。周囲の円の大きさによって中央の円の見え方が変わります。このデモでは、左側の青い円をスライダーで動かして、右側の青い円に重ねることができます。</p>
+    </div>
+    <div class="demo-container">
+        <div class="container">
+            <div class="illusion" id="left-illusion">
+                <div class="central-circle" id="movable-circle"></div>
+                <div class="surrounding-circle large"></div>
+                <div class="surrounding-circle large"></div>
+                <div class="surrounding-circle large"></div>
+                <div class="surrounding-circle large"></div>
+                <div class="surrounding-circle large"></div>
+                <div class="surrounding-circle large"></div>
+                <div class="surrounding-circle large"></div>
+                <div class="surrounding-circle large"></div>
+            </div>
+            <div class="illusion" id="right-illusion">
+                <div class="central-circle"></div>
+                <div class="surrounding-circle small"></div>
+                <div class="surrounding-circle small"></div>
+                <div class="surrounding-circle small"></div>
+                <div class="surrounding-circle small"></div>
+                <div class="surrounding-circle small"></div>
+                <div class="surrounding-circle small"></div>
+                <div class="surrounding-circle small"></div>
+                <div class="surrounding-circle small"></div>
+            </div>
+        </div>
+        <div class="slider-container">
+            <input type="range" min="0" max="100" value="0" id="distanceSlider">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

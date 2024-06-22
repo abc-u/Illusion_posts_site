@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ポンゾ錯視</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <nav>
+            <a href="../index.html" class="home-link">Illusion</a>
+        </nav>
+    </header>
+    <div class="content">
+        <div class="header">
+            <h1>ポンゾ錯視</h1>
+            <p>このデモでは、スライダーを使って上の棒の位置、縦の棒の角度、縦の棒の位置、横の棒の長さを調整できます。</p>
+        </div>
+        <div class="demo-container">
+            <div class="illusion-container">
+                <div class="line" id="movable-line"></div>
+                <div class="line" id="fixed-line"></div>
+                <div class="converging-lines">
+                    <div class="converging-line" id="left-line"></div>
+                    <div class="converging-line" id="right-line"></div>
+                </div>
+            </div>
+            <div class="slider-container">
+                <label for="distanceSlider">上の棒の移動</label>
+                <input type="range" min="0" max="100" value="20" id="distanceSlider">
+            </div>
+            <div class="slider-container">
+                <label for="angleSlider">縦線の角度調整</label>
+                <input type="range" min="0" max="180" value="110" id="angleSlider">
+            </div>
+            <div class="slider-container">
+                <label for="positionSlider">縦線の位置調整</label>
+                <input type="range" min="0" max="100" value="50" id="positionSlider">
+            </div>
+            <div class="slider-container">
+                <label for="lengthSlider">横線の長さ調整</label>
+                <input type="range" min="20" max="100" value="20" id="lengthSlider">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

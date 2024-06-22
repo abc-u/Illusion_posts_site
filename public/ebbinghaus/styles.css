@@ -1,0 +1,170 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.main-header {
+    width: 100%;
+    background-color: #3498db;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.main-header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 800px;
+    border-radius: 8px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2em;
+    color: #333;
+}
+
+.header p {
+    margin: 10px 0 0;
+    font-size: 1.2em;
+    color: #666;
+    line-height: 1.6;
+}
+
+.demo-container {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 40px;
+}
+
+.illusion {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.central-circle {
+    width: 50px;
+    height: 50px;
+    background-color: #3498db;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+}
+
+.surrounding-circle {
+    width: 30px;
+    height: 30px;
+    background-color: #e74c3c;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.surrounding-circle.large {
+    width: 60px;
+    height: 60px;
+}
+
+.surrounding-circle.small {
+    width: 20px;
+    height: 20px;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.illusion .central-circle {
+    animation: rotate 0s infinite linear;
+    transform-origin: 0 100px; /* 中央の円から100pxの位置を原点に設定 */
+}
+
+.illusion .surrounding-circle {
+    animation: rotate 0s infinite linear;
+}
+
+.illusion .surrounding-circle:nth-child(2) {
+    transform: rotate(0deg) translate(100px) rotate(0deg);
+}
+
+.illusion .surrounding-circle:nth-child(3) {
+    transform: rotate(45deg) translate(100px) rotate(-45deg);
+}
+
+.illusion .surrounding-circle:nth-child(4) {
+    transform: rotate(90deg) translate(100px) rotate(-90deg);
+}
+
+.illusion .surrounding-circle:nth-child(5) {
+    transform: rotate(135deg) translate(100px) rotate(-135deg);
+}
+
+.illusion .surrounding-circle:nth-child(6) {
+    transform: rotate(180deg) translate(100px) rotate(-180deg);
+}
+
+.illusion .surrounding-circle:nth-child(7) {
+    transform: rotate(225deg) translate(100px) rotate(-225deg);
+}
+
+.illusion .surrounding-circle:nth-child(8) {
+    transform: rotate(270deg) translate(100px) rotate(-270deg);
+}
+
+.illusion .surrounding-circle:nth-child(9) {
+    transform: rotate(315deg) translate(100px) rotate(-315deg);
+}
+
+.slider-container {
+    width: 80%;
+    max-width: 800px;
+    margin-top: 20px;
+}
+
+#distanceSlider {
+    width: 100%;
+}
